@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+
+body {
+    font-family: 'Kanit', sans-serif;
+}
+section.cover {
+    width: 100%;
+    height: 100vh;
+    /*background: url(https://images.wallpaperscraft.com/image/girl_mountains_backpack_114178_5458x3705.jpg);*/
+    background: url(vegetable.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+.content p {
+    width: 70%;
+    margin: 30px auto;
+    text-align: justify;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: cloud light;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+nav .c {
+    font-size: 5px;
+}
+
+nav.black {
+    background: rgb(0, 0, 0, 0.8);
+    height: 80px;
+    padding: 10px 100px;
+}
+
+nav {
+    background: rgb(255, 255, 255, 0.8);
+    height: 80px;
+    padding: 10px 80px;
+}
+
+nav .logo {
+    padding: 10px 4px;
+    height: 80px;
+    float: left;
+    font-size: 30px;
+    transition: .3s;
+}
+
+nav.black .logo {
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    line-height: 60px;
+    color: #151515;
+    padding: 11px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+    font-size: 19px;
+}
+
+nav.black ul li a {
+    color: #fff;
+}
+
+nav ul li a:focus {
+    outline: none;
+}
+
+nav ul li a.active {
+    background-image: linear-gradient(to right, #bb00ff 0%, #46d2d2 100%);
+    border-radius: 6px;
+    color: #fff;
+    
+}
+
+.container {
+    background: red;
+}
