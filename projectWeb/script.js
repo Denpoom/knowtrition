@@ -1,11 +1,14 @@
 $(window).on('scroll', function(){
 	if($(window).scrollTop()) {
 		$('nav').addClass('black');
+		document.getElementById("logo1").scr = 'logo.png';
 		//$('nav').removeClass('white');
 	}
 	else {
 		$('nav').removeClass('black');
+		document.getElementById("logo1").scr = 'logo_white.png';
 		//$('nav').addClass('white');
+
 	}
 });
 
