@@ -56,9 +56,9 @@ nav.black {
 }
 
 nav {
-    background: rgb(255, 255, 255, 0);
-    height: 80px;
-    padding: 10px 80px;
+    background: rgb(255, 255, 255, 0.8);
+    height: 70px;
+    padding: 5px 80px;
 }
 
 nav .logo {
@@ -67,7 +67,7 @@ nav .logo {
     float: left;
     font-size: 30px;
     transition: .3s;
-    top: 0;
+    top: -5px;
     position: absolute;
 
 }
@@ -79,9 +79,9 @@ nav.black .logo {
 nav ul {
     list-style: none;
     float: right;
-    margin: 0;
     padding: 0;
     display: flex;
+    position: relative;
 }
 
 nav ul li {
@@ -89,13 +89,14 @@ nav ul li {
 }
 
 nav ul li a {
+     font-family: 'Kanit', sans-serif;
     line-height: 60px;
     color: #151515;
     padding: 11px 30px;
     text-decoration: none;
     text-transform: uppercase;
-    transition: .3s;
-    font-size: 19px;
+    transition: .5s;
+    font-size: 20px;
 }
 
 nav.black ul li a {

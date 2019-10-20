@@ -1,16 +1,26 @@
-$(window).on('scroll', function(){
-	if($(window).scrollTop()) {
-		$('nav').addClass('black');
-		document.getElementById("logo1").scr = 'logo.png';
-		//$('nav').removeClass('white');
-	}
-	else {
-		$('nav').removeClass('black');
-		document.getElementById("logo1").scr = 'logo_white.png';
-		//$('nav').addClass('white');
+// $(window).on('scroll', function(){
+// 	if($(window).scroll()) {
+// 		$('nav').addClass('black');
+// 		document.getElementById("logo1").scr = 'logo.png';
+// 		//$('nav').removeClass('white');
+// 	}
+// 	else {
+// 		$('nav').removeClass('black');
+// 		document.getElementById("logo1").scr = 'logo_white.png';
+// 		//$('nav').addClass('white');
 
-	}
-});
+// 	}
+// });
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+		var currentScrollPos = window.pageYOffset;
+		if (prevScrollpos > currentScrollPos) {
+			document.getElementById("navbar").style.top = "0";
+		} else {
+			document.getElementById("navbar").style.top = "-80px";
+		}
+		prevScrollpos = currentScrollPos;
+		}
 
 function change(element,value) {
 	element.parentElement.setAttribute('data-select',value);
