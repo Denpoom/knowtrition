@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
 
 body {
     font-family: 'Kanit', sans-serif;
@@ -10,7 +12,13 @@ section.cover {
     background: url(asset/vegetable.jpg);
     background-size: cover;
     background-position: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 5.5rem;
+    color: #f5f5f5;
+    
+    
 }
+
 
 .content {
     margin-top: 50px;
@@ -134,6 +142,9 @@ p{
 }
 
 @media (max-width: 767.98px) { 
+    section.cover {
+        font-size: 4rem;
+    }
     div.card{
         width: auto !important; 
         color:red; 
