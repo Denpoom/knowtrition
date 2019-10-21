@@ -133,10 +133,42 @@ p{
     text-indent: 2.5em;
 }
 #profile_pic{
-    border-radius: 20%;
+    background-image: url(https://akns-images.eonline.com/eol_images/Entire_Site/201679/rs_634x1024-160809113818-634-dwayne-johnson-fast-furious.jpg?fit=inside|900:auto&output-quality=90);
+    background-size: cover ;
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+    margin: 5%;
+
+}
+.head_line{
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+.detail{
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+img{
+    width: 70px;
+}
+.col-sm .col-lg-4 .contact_lg{
+    width: 50%;
 }
 
 @media (max-width: 767.98px) { 
+    .head_line{
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    .detail{
+        font-size: 15px;
+    }
     div.card{
         width: auto !important; 
         color:red; 
