@@ -132,6 +132,9 @@ nav ul li a.active {
 p{
     text-indent: 2.5em;
 }
+#profile_pic{
+    border-radius: 20%;
+}
 
 @media (max-width: 767.98px) { 
     div.card{
