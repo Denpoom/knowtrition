@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
 html {
     height: 100%;
 }
@@ -90,7 +91,6 @@ nav ul li a:focus {
 
 
 @media screen and (max-width: 930px){
-
     .logo {
       padding:0;
     }
@@ -272,10 +272,10 @@ section.sec1 {
     position: sticky;
     width: 100%;
     height: 100vh;
-    background: url(image/cover.jpg);
+    background: url(image/avo1.jpg);
     background-size: cover;
     background-position: center;
-    /*padding: 100px 2.5% 2.5% 0px;*/
+
     padding-top: 130px;
     padding-left: 2.5%;
     padding-right: 2.5%;
@@ -285,43 +285,102 @@ section.sec1 {
 section.sec2 {
     width: 100%;
     height: 100vh;
-    background: url(image/food2.jpg);
+    background: url(image/avo3.jpg);
     background-size: cover;
     background-position: center;
     padding-top: 150px;
     padding-right: 2.5%; 
     overflow: hidden;
 }
+section.sec3{
+  position: sticky;
+  width: 100%;
+  height: 100vh;
+  background: url(image/avo2.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 130px;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  overflow: hidden;
+}
 
+section.sec4 {
+  width: 100%;
+  height: 100vh;
+  background: url(image/avo.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 150px;
+  padding-right: 2.5%; 
+  overflow: hidden;
+}
+section.sec5 {
+  position: sticky;
+  width: 100%;
+  height: 100vh;
+  background: url(image/avo5.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 130px;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  overflow: hidden;
+  
+}
 .componentLeft {
     width: 50%;
-    background: rgb(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.1);
     padding: 20px;
     /*margin-left: 50px;*/
 }
 
+
+
+
+.componentLeft1 {
+  width: 50%;
+  background: rgba(255, 255, 255, 0.644);
+  padding: 20px;
+}
+.componentLeft1 h1{
+  font-size: 45px;
+  font-family: 'Kanit', sans-serif;
+}
+
+
+
+
+
+
+
+/* 
+ */
+ /*  */
+/* font H1 หัวข้อ */
 .componentLeft h1{
-    font-size: 5em;
-    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    font-family: 'Kanit', sans-serif;
+}
+.componentRight h1{
+  font-size: 45px;
+  font-family: 'Kanit', sans-serif;
 }
 
 .componentRight {
     width: 45%;
-    background: rgb(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.486);
     padding: 20px;
     float: right;
     width: 45%;
     min-width: 357px;
 }
 
-.componentRight h1{
-    font-size: 5em;
-    font-family: 'Dancing Script', cursive;
-}
+
 
 p {
-    font-family: 'Caveat', cursive;
-    font-size: 1.5em;
+  font-family: 'Kanit', sans-serif;
+    font-size: 20px;
 }
 
 a:hover {
