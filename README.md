@@ -1,7 +1,7 @@
 <h1>KNOWTRITION</h1>
 Knowtrition is website that contain information about benefits, food science data, insight of ingredients that might be around you<br>
 
-<a href=""><img src="รูป" width="1000px"  height="300"></a><br>
+<a href=""><img src="รูป" width="850px"  height="300"></a><br>
 
 
 
