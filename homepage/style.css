@@ -1,28 +1,171 @@
-@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Kanit|Permanent+Marker|Prompt|Sriracha&display=swap');
+
+
 
 
 body {
+  
     font-family: 'Kanit', sans-serif;
-}
-section.cover {
     width: 100%;
-    height: 100vh;
-    /*background: url(https://images.wallpaperscraft.com/image/girl_mountains_backpack_114178_5458x3705.jpg);*/
-    background: url(asset/vegetable.jpg);
-    background-size: cover;
-    background-position: center;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 5.5rem;
-    color: #f5f5f5;
+   
+}
+.cover {
+    width: 100%;
+    height: 80vh;
     
+    font-family: 'Prompt', sans-serif;
     
+}
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  filter: brightness(70%);
 }
 
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('./asset/food-photographer3.jpg') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
+#middletext{
+  font-family: 'Sriracha', cursive;  
+  color: #fff ;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#middletext h1{
+  font-size: 5rem;
+}
+#middletext p{
+  font-size: 1.5rem;
+}
+div.col-12.box{
+  height: 100vh;
+}
+.m{
+  height: 120vh;
+}
+
+.text{
+  font-family: 'Sriracha', cursive;  
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  
+}
+.text-m{
+  font-family: 'Sriracha', cursive;  
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+
+  /* position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 36vw;
+  height: 13vh; */
+
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head{
+  font-size: 2rem !important;
+  text-decoration: underline;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+#point_pic{
+  margin-left: 10%;
+  width: 80%;
+  border-radius: 10%;
+  z-index: 1;
+  
+}
+#logo_intro{
+  filter: brightness(0) invert(1);
+  width: 15vw;
+  margin: 20%;
+}
+#logo_intro_big{
+  filter: brightness(0) invert(1);
+  width: 30vw;
+}
+
+section.introduce{
+ 
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom,  rgb(255, 255, 255) ,  rgb(109, 154, 177));
+  font-family: 'Prompt', sans-serif;
+  
+}
+#intro_pic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 95%;
+  border-radius:20px;
+  
+}
+section.selection{
+  position: relative;
+}
+img.card-img-top{
+  height: 25vh;
+}
+.container{
+ 
+}
 
 .content {
     margin-top: 50px;
+    
 }
+
+
 
 .content p , .content ol{
     width: 70%;
@@ -124,8 +267,8 @@ nav ul li a.active {
 
 .card{
     font-family: 'Kanit', sans-serif;
-    margin: 5%; 
-    padding: 5%;
+    margin: 10%; 
+    padding: 10%;
 }
 .footer {
     text-align: center;
@@ -133,24 +276,24 @@ nav ul li a.active {
     width: 100%;
     height: 60px;
     line-height: 60px;
-    background-color: #f5f5f5;
+    
     display: block;
     box-sizing: border-box;
 }
 p{
-    text-indent: 2.5em;
+  text-align: center;
 }
 #m_navbar{
     visibility: hidden;
   }
 
-@media (max-width: 767.98px) { 
-    section.cover {
-        font-size: 4rem;
-    }
+@media screen and (max-width: 767.98px) { 
+  #logo_intro_big, #logo_intro{
+    filter: brightness(0) invert(1);
+    width: 50vw;
+  }
     div.card{
         width: auto !important; 
-        color:red; 
     }
     .content p , .content ol{
         width: 70%;
@@ -168,6 +311,9 @@ p{
         line-height: 35px;
         font-family: 'Kanit', sans-serif;
     }
+    img.card-img-top{
+      width: 60vw !important;
+    }
     nav{
         visibility: hidden;
     }
@@ -177,6 +323,9 @@ p{
     
  }
  @media screen and (max-width: 930px){
+  img.card-img-top{
+    width: 28vw;
+  }
     .nav-wrapper{
         visibility: visible !important; 
     }
