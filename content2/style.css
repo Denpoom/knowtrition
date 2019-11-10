@@ -433,7 +433,21 @@ footer {
     background: #fbfbfb;
 }
 
+#image {
+    width: 173px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
 @media screen and (max-width: 600px){
+    #image {
+        left: 0;
+        right: 0;
+    }
+
     .preview {
         width: 90%;
     }
@@ -450,6 +464,11 @@ footer {
 }
 
 @media screen and (max-width: 400px){
+    #image {
+        left: 0;
+        right: 0;
+    }
+
     .row {
         width: 98%;
     }
