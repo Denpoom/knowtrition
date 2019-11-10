@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
 html {
     height: 100%;
 }
@@ -11,7 +12,7 @@ body {
     height: 100vh;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: ;
+    font-family: 'Kanit', sans-serif;
 }
 
 nav {
@@ -36,6 +37,8 @@ nav.black {
 }
 
 nav {
+    position: fixed;
+    
     background: rgb(255, 255, 255, 0.8);
     height: 80px;
     padding: 10px 50px;
@@ -265,10 +268,10 @@ nav ul li a:focus {
 
 
 section.sec1 {
-    position: sticky;
+    position: relative;
     width: 100%;
     height: 100vh;
-    background: url(image/tofu2.jpg);
+    background: url(image/tofu2.jpg); /*เปลี่ยนภาพปกตรงนี้*/
     background-size: cover;
     background-position: center;
     /*padding: 100px 2.5% 2.5% 0px;*/
@@ -279,21 +282,35 @@ section.sec1 {
 }
 
 .boxtopic {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     font-size: 10em;
     color: #fff;
     background: rgb(0, 0, 0, 0.2);
     padding: 0px 32px;
     border: #fff 5px solid;
     width: 3em;
+    height: 1.6em;
     text-align: center;
-    margin: auto;
+    font-family: 'Kanit', sans-serif;
+    
 }
 
 
 .row {
     width: 80%;
-    background:;
     margin: 30px auto;
+}
+
+.box {
+    width: 80%;
+    margin: 30px auto;
+    background: ;
+    text-align: center;
 }
 
 .picture {
@@ -314,12 +331,12 @@ img {
 
 .content h1 {
     font-size: 4em;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Kanit', sans-serif;
 }
 
 .content p {
     font-size: 1.5em;
-    font-family: 'Dancing Script', cursive; 
+    font-family: 'Kanit', sans-serif; 
 }
 
 button {
@@ -338,7 +355,7 @@ button {
 }
 
 object {
-  width: 30%;
+  width: 95%;
   margin: 20px auto;
   display: inline;
 }
@@ -354,6 +371,83 @@ object {
     box-sizing: border-box;
 }
 
+.preview {
+    position: relative;
+    width: 45%;
+    height: 201px;
+    background: #fff;
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    border-radius: 20px;
+    margin: 0px 10px 20px 10px;
+}
+
+.preview:hover > .test {
+    transform: translateY(-100%);
+}
+
+.test {
+  position: absolute;
+  top: 201px;
+  width: 100%;
+  height: 100%;
+  background: lightskyblue;
+  transition: .2s; 
+  padding: 30px 20px;
+  color: #fff;
+  text-align: left;
+  font-size: 1.2em;
+
+}
+
+h2 {
+    /*position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 49%;
+    width: 85%;*/
+    
+    /*display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;*/
+    margin: auto 30px;
+}
+
+.center {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+    width: 100%; 
+    text-align: center; 
+    min-height: 100%; 
+    align-items: center; 
+}
+
+footer {
+    background: #fbfbfb;
+}
+
+@media screen and (max-width: 600px){
+    .preview {
+        width: 90%;
+    }
+
+    .picture {
+      width: 90%;
+      padding: 0;
+      margin: auto;
+  }
+
+  .content {
+      width: 100%;
+  }
+}
 
 @media screen and (max-width: 400px){
     .row {
@@ -361,8 +455,9 @@ object {
     }
 
     .picture {
-        width: 100%;
+        width: 90%;
         padding: 0;
+        margin: auto;
     }
 
     .content {
@@ -381,5 +476,22 @@ object {
     .boxtopic {
         font-size: 3em;
         padding: 0;
+    }
+
+    .box {
+        width: 95%;
+        background:  !important;
+    }
+
+    .preview {
+        width: 95%;
+        margin-bottom: 10px; 
+    }
+
+    h2 {
+        height: 40%;
+        width: 81%;
+        font-size: 2em;
+
     }
 }
