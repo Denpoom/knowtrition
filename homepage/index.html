@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Knowtrition-เว็บไซต์สำหรับการเรียนรู้เกี่ยวกับวัตุดิบ</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+     
 </head>
 
 <body>
@@ -15,7 +20,7 @@
     <div class="fullscreen-bg">
         
         
-                <video loop muted autoplay poster="./asset/food-photographer3.jpg" class="fullscreen-bg__video" width="1520">
+                <video loop muted autoplay preload class="fullscreen-bg__video" width="1520">
                     <source src="./asset/coverr-red-apples-1566725031062.mp4" type="video/mp4">
                         <h1 style="text-align: center; vertical-align: middle; position: absolute; z-index: 1;">KNOWTRITION</h1>
                 </video>
@@ -30,10 +35,10 @@
         <div class="row">
             <div class="col-12 box">
                     <div id="middletext"><h1>KNOWTRITION</h1><p>เว็บไซต์รวบรวมความรู้เกี่ยวกับวัตุดิบใกล้ตัวคุณ</p>
-                        <button type="button" class="btn btn-secondary">ไปที่เนื้อหา</button></div>
+                        <a href="#ingredient"><button type="button" class="btn btn-secondary">ไปที่เนื้อหา</button></a></div>
             </div>
         </div>
-        <div class="row m">
+        <div class="row m" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"  data-aos-duration="2000">
             <div class="col-lg-6 col-sm-12 text-m">
                     <img src="./asset/intro/Vegetables1.png" id="logo_intro_big">
             </div>
@@ -46,18 +51,18 @@
 
         </div>
 
-        <div class="row text m sr">
+        <div class="row text m sr" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"  data-aos-duration="1500">
             <div class="col-12 head"> จุดมุ่งหมาย</div>
             <div class="col-lg-4 col-sm-12"><img src="./asset/intro/1.png" id="logo_intro"> เพิ่มพูนความรู้ด้านโภชนาการ วิทยาศาสตร์อาหาร การเเพทย์สุขภาพ</div>
             <div class="col-lg-4 col-sm-12"><img src="./asset/intro/2.png" id="logo_intro"> เลือกวัตถุดิบในการบริโภคได้เหมาะสมกับตนเอง</div>
             <div class="col-lg-4 col-sm-12"><img src="./asset/intro/3.png" id="logo_intro"> ดึงคุณค่าทางอาหารของวัตถุดิบออกมาได้อย่างเต็มประสิทธิภาพ</div>
         </div>
 
-        <div class="row">
-            <div class="col-12 text head">
+        <div class="row" id="ingredient">
+            <div class="col-12 text head" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"  data-aos-duration="2000">
                     วัตถุดิบที่เเนะนำ
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"  data-aos-duration="2000">
                 <div class="card" style="width: 18rem; border-radius: 20px;">
                     <img class="card-img-top"
                         src="https://imgcp.aacdn.jp/img-a/1720/auto/global-aaj-front/article/2018/05/5afd107b3518e_5afd0a393f5c0_781784168.jpg"
@@ -74,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"  data-aos-duration="2000">
                     <div class="card" style="width: 18rem; border-radius: 20px;">
                         <img class="card-img-top"
                             src="./asset/card_pic/b149b796e71c35c47dc41065ddc1281e.jpg"
@@ -94,7 +99,7 @@
                         </div>
                     </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"  data-aos-duration="2000">
                     <div class="card" style="width: 18rem; border-radius: 20px;">
                         <img class="card-img-top"
                             src="./asset/card_pic/nutto3.jpg"
@@ -113,7 +118,7 @@
                         </div>
                     </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"  data-aos-duration="2000">
                     <div class="card" style="width: 18rem; border-radius: 20px;">
                         <img class="card-img-top"
                             src="./asset/card_pic/plain-yogurt.jpg"
@@ -130,7 +135,7 @@
                         </div>
                     </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"  data-aos-duration="2000">
                     <div class="card" style="width: 18rem; border-radius: 20px;">
                         <img class="card-img-top"
                             src="./asset/card_pic/vinegar.jpg"
@@ -147,7 +152,7 @@
                         </div>
                     </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"  data-aos-duration="2000">
                     <div class="card" style="width: 18rem; border-radius: 20px;">
                         <img class="card-img-top"
                             src="./asset/card_pic/tomatoes.jpg"
@@ -164,7 +169,7 @@
                         </div>
                     </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"  data-aos-duration="2000">
                     <div class="card" style="width: 18rem; border-radius: 20px;">
                         <img class="card-img-top"
                             src="asset/card_pic/apple.jpg"
@@ -182,7 +187,7 @@
                         </div>
                     </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"  data-aos-duration="2000">
                     <div class="card" style="width: 18rem; border-radius: 20px;">
                         <img class="card-img-top"
                             src="./asset/card_pic/Avocado.jpg"
@@ -200,7 +205,7 @@
                     </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"  data-aos-duration="2000">
                     <div class="card" style="width: 18rem; border-radius: 20px;">
                         <img class="card-img-top"
                             src="./asset/card_pic/tofu.jpg"
@@ -217,7 +222,7 @@
                     </div>
             </div>
            
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"  data-aos-duration="2000">
                     <div class="card" style="width: 18rem; border-radius: 20px;">
                         <img class="card-img-top"
                             src="./asset/card_pic/broccoli.jpg"
@@ -235,8 +240,8 @@
             </div>
            
            
-            <div class="col-lg-4 col-md-6 col-sm-12"></div>
-            <div class="col-lg-4 col-md-6 col-sm-12"></div>
+            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"  data-aos-duration="2000"></div>
+            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"  data-aos-duration="2000"></div>
 
         </div>
 
@@ -245,44 +250,22 @@
 
 
 
-    <!---------------------------------------------------------------------------navbar---------------------------------------------------------------------------->
-    <nav id="navbar">
-        <div class="logo" ><a href="../"><img id="logo1" src="./asset/logo.png" style="width: 150px;" ></a></div>
-        <ul>
-            <li><a  href="./" style="text-decoration: none;">หน้าเเรก</a></li>
-            <li><a  href="./Content/" style="text-decoration: none;">เนื้อหา</a></li>
-            <li><a  href="./about/" style="text-decoration: none;">เกี่ยวกับเรา</a></li>
-            <li><a  href="#test" style="text-decoration: none;">Blog</a></li>
-        </ul>
-    </nav>
-    <nav id="m_navbar">
-            <div class="logo">
-                <a href="./wtprojects/wtpg23/"><img id="logo1" src="./asset/logo.png" style="width: 150px;" ></a>
-            </div>
-            <input type="checkbox" id="nav" style=" visibility: hidden;">
-            <label for="nav" id='nav-stripe' class="nav-btn" tabindex="0" aria-label="Click Me to expand Navigation">
-                <i></i>
-                <i></i>
-                <i></i>
-            </label>
-            <div class="nav-wrapper">
-                <ul>
-                    <li><a href="./">หน้าเเรก</a></li>
-                    <li><a href="./Content/">เนื้อหา</a></li>
-                    <li><a href="./about/">เกี่ยวกับเรา</a></li>
-                    <li><a href="#">blog</a></li>
-                </ul>
-            </div>
-    </nav>
+  
+    
   <!---------------------------------------------------------------------------footer---------------------------------------------------------------------------->
     <footer class="footer">
             <div class="container">
-                <img src="./GitHub-Mark/PNG/GitHub-Mark-64px.png"><br>
                 <span class='text-muted'>King's Mongkut Institute of Technology of Ladkrabang</span>
             </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      
+    </script>
+
 
     <script type="text/javascript" src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
