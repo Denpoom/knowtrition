@@ -16,5 +16,5 @@
 - 61070060     นาย เด่นภูมิ ศรีเมือง   &nbsp;&nbsp;&nbsp;&nbsp;    <strong>GITHUB</strong> &nbsp;&nbsp; [รอ](https://github.com/)
 - 61070122     นาย ปุญญพัฒน์ แปลงพระเนตร   &nbsp;&nbsp;&nbsp;&nbsp;    <strong>GITHUB</strong> &nbsp;&nbsp; [รอ](https://github.com/)
 - 61070238     นาย สหัสวรรษ ขันรักษา   &nbsp;&nbsp;&nbsp;&nbsp;    <strong>GITHUB</strong> &nbsp;&nbsp; [รอ](https://github.com/)
-- 61070340     นาย ณิติน ผลงาม   &nbsp;&nbsp;&nbsp;&nbsp;    <strong>GITHUB</strong> &nbsp;&nbsp; [รอ](https://github.com/)
+- 61070340     นาย คณิติน ผลงาม   &nbsp;&nbsp;&nbsp;&nbsp;    <strong>GITHUB</strong> &nbsp;&nbsp; [รอ](https://github.com/)
 - 61070305     นางสาว บญจพร เงินศรีตระกูล    &nbsp;&nbsp;&nbsp;&nbsp;    <strong>GITHUB</strong> &nbsp;&nbsp; [รอ](https://github.com/)
