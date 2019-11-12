@@ -8,13 +8,13 @@ window.onscroll = function () {
 	var img = document.getElementById('image');
 	if (currentScrollPos === 0) {
 		nav.classList.remove('black');
-		img.src = "image/logo.png";
+		img.src = "../nav/logo.png";
 		//nav.style.background = "red";
 	}
 	else if (prevScrollpos > currentScrollPos) {
 		nav.classList.add('black');
 		nav.style.top = "0";
-		img.src = "image/logo_white.png";
+		img.src = "../nav/logo_white.png";
 		btn[0].top = "0px";
 	} else {
 		nav.style.top = "-90px";

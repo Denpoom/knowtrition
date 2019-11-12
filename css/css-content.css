@@ -19,13 +19,6 @@ body {
 
 
 
-
-
-
-
-
-
-
 section.sec1 {
     position: relative;
     width: 100%;
@@ -247,14 +240,6 @@ footer {
         margin: 0;
     }
 
-    section.sec1 {
-        height: 42vh;
-    }
-
-    .boxtopic {
-        font-size: 3em;
-        padding: 0;
-    }
 
     .box {
         width: 95%;

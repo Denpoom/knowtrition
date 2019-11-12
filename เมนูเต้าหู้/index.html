@@ -12,9 +12,36 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+    <link rel="stylesheet" type="text/css" href="../css/css-foodmenu.css">
     <link rel="stylesheet" type="text/css" href="../nav/nav.css">
     <link rel="stylesheet" href="../aos/aos.css" />
+    <style>
+        section.sec1 {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url(image/tofu.jpg); /*เปลี่ยนภาพปกตรงนี้*/
+            background-size: cover;
+            background-position: center;
+            /*padding: 100px 2.5% 2.5% 0px;*/
+            padding-top: 130px;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+            overflow: hidden;
+        }
+        @media screen and (max-width: 600px){
+            section.sec1 {
+                height: 51vh;
+            }
+        }
+
+        @media screen and (max-width: 400px){
+            section.sec1 {
+                height: 45vh;
+            }
+        }
+    </style>
 
     <title>เต้าหู้</title>
 </head>
@@ -172,7 +199,7 @@
                 <ul>
                     <li><a href="#first" onclick="myClick()">เต้าหู้ทอด</a></li>
                     <li><a href="#second" onclick="myClick()">แกงจืดเต้าหู้</a></li>
-                    <li><a href="#" onclick="myClick()">เต้าหู้หน้าหลัก</a></li>
+                    <li><a href="../เต้าหู้/index.html" onclick="myClick()">เต้าหู้หน้าหลัก</a></li>
                 </ul>
             </div>
         </nav>
