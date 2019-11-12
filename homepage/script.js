@@ -54,7 +54,7 @@
 				
 				
 			}else if(scroll < window.innerHeight*3){
-				this.document.querySelector('.fullscreen-bg video').style.opacity = 1/((scroll%window.innerHeight)*0.01);
+				this.document.querySelector('.fullscreen-bg video').style.opacity = 2/((scroll%window.innerHeight)*0.01);
 				if(this.document.querySelector('source').src.slice(30) != '/asset/videoplayback.mp4'){
 					change = true;
 				}
