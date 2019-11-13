@@ -1,30 +1,4 @@
-// $(window).on('scroll', function(){
-// 	if($(window).scroll()) {
-// 		$('nav').addClass('black');
-// 		document.getElementById("logo1").scr = 'logo.png';
-// 		//$('nav').removeClass('white');
-// 	}
-// 	else {
-// 		$('nav').removeClass('black');
-// 		document.getElementById("logo1").scr = 'logo_white.png';
-// 		//$('nav').addClass('white');
 
-// 	}
-// });
-		// var prevScrollpos = window.pageYOffset;
-		// window.onscroll = function() {
-		// var currentScrollPos = window.pageYOffset;
-		// if (prevScrollpos > currentScrollPos) {
-		// 	document.getElementsByClassName("nav-btn").style.top = "0";
-		// 	document.getElementsByClassName("nav-wrapper").style.top = "0";
-		// 	document.getElementById("nav-stripe").style.top = "10px";
-		// } else {
-		// 	document.getElementById("nav-btn").style.top = "-80px";
-		// 	document.getElementById("nav-wrapper").style.top = "-80px";
-		// 	document.getElementById("nav-stripe").style.top = "-80px";
-		// }
-		// prevScrollpos = currentScrollPos;
-		// }
 		
 		window.addEventListener("scroll", function (event) {
 			var scroll = Math.floor(this.scrollY);
@@ -38,7 +12,7 @@
 			
 			
 			if(scroll < window.innerHeight){
-				this.document.querySelector('.fullscreen-bg video').style.opacity = 1/(scroll*0.01);
+				this.document.querySelector('.fullscreen-bg video').style.opacity = 2/(scroll*0.01);
 				if(this.document.querySelector('source').src.slice(30) != '/asset/coverr-red-apples-1566725031062.mp4'){
 					change = true;
 				}
@@ -46,7 +20,7 @@
 				
 			}
 			else if(scroll < window.innerHeight*2){
-				this.document.querySelector('.fullscreen-bg video').style.opacity = 1/((scroll%window.innerHeight)*0.01);
+				this.document.querySelector('.fullscreen-bg video').style.opacity = 0.35+2/((scroll%window.innerHeight)*0.01);
 				if(this.document.querySelector('source').src.slice(30) != '/asset/food_foottage.mp4'){
 					change = true;
 				}
@@ -54,11 +28,11 @@
 				
 				
 			}else if(scroll < window.innerHeight*3){
-				this.document.querySelector('.fullscreen-bg video').style.opacity = 2/((scroll%window.innerHeight)*0.01);
-				if(this.document.querySelector('source').src.slice(30) != '/asset/videoplayback.mp4'){
+				this.document.querySelector('.fullscreen-bg video').style.opacity = 0.35+2/((scroll%window.innerHeight)*0.01);
+				if(this.document.querySelector('source').src.slice(30) != '/asset/coverr-red-apples-1566725031062.mp4'){
 					change = true;
 				}
-				this.document.querySelector('source').src = './asset/videoplayback.mp4';
+				this.document.querySelector('source').src = './asset/coverr-red-apples-1566725031062.mp4';
 				
 				
 			}else{
@@ -67,7 +41,7 @@
 			if(change){
 					
 					$(".fullscreen-bg video")[0].load();
-					console.log("load");
+					
 					
 				
 			}
@@ -82,12 +56,5 @@ function change(element,value) {
 };
 
 
-$('choice1').on('click', function() { // when you click the div
-  $(this).removeClass('hover'); // add the class 'no-hover'
-});
-
-$('choice2').on('click', function() { // when you click the div
-  $(this).unbind("mouseenter mouseleave"); // add the class 'no-hover'
-});
 
 

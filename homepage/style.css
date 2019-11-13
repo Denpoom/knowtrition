@@ -5,6 +5,32 @@
 html{
   scroll-behavior: smooth;
 }
+nav{
+  padding: 23px 80px !important;
+}
+.btni{
+  
+  border: 2px solid white;
+  color: #fff;
+  font-size: large;
+  padding: 1% 2% 0;
+  background: none;
+  transition: 0.5s;
+  
+}
+.btni:hover{
+  letter-spacing: 1em;
+  padding: 1% 4% 0;
+  transition: 0.5s;
+  text-align: center;
+}
+.black{
+  color: black ;
+  border: 2px solid black;
+}
+.black:hover{
+  color: black;
+}
 
 body {
   
@@ -83,6 +109,9 @@ div.col-12.box{
 }
 .m{
   height: 120vh;
+  
+}
+#ingredient.row{
   
 }
 
