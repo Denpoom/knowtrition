@@ -45,7 +45,7 @@ function myClick() {
 
 var imgLink = document.getElementById('image');
 imgLink.onclick = function() {
-    window.location.href = '../homepage/index.html';
+    window.location.href = '../index.html';
 }
 
 if(!document.getElementById('id1')) {
