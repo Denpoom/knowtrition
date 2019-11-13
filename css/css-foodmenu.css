@@ -66,7 +66,7 @@ img {
     padding: 20px;
 }
 
-.content-left {
+/* .content-left {
     width: 50%;
     background: #fff333;
     border-radius: 40px 0px 0px 40px;
@@ -76,7 +76,7 @@ img {
     width: 50%;
     background: #fff333;
     border-radius: 0px 40px 40px 0px;
-}
+} */
 
 h1 {
     font-size: 4em;
