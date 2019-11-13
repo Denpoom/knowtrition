@@ -37,6 +37,17 @@ function myFunction() {
 	}
 }
 
+function myClick() {
+	document.getElementById('nav').checked = false;
+	//alert("myClick() " +document.getElementById('nav').checked);
+	wrap[0].style.left = "100%";
+}
+
+var imgLink = document.getElementById('image');
+imgLink.onclick = function() {
+    window.location.href = '../homepage/index.html';
+}
+
 if(!document.getElementById('id1')) {
     var link = document.createElement('link');
     link.id = 'id1';
