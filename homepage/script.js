@@ -56,6 +56,9 @@ function change(element,value) {
 };
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6de7d3af72bb361fe8603fe12860c333c6a2e46e
 
 
