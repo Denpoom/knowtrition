@@ -192,13 +192,46 @@ p{
     visibility: hidden;
   }
 
-#profile_pic{
-    background-image: url(https://akns-images.eonline.com/eol_images/Entire_Site/201679/rs_634x1024-160809113818-634-dwayne-johnson-fast-furious.jpg?fit=inside|900:auto&output-quality=90);
+#profile_pic1{
+    background-image: url(asset/profile1.jpg);
     background-size: cover ;
     border-radius: 100%;
     height: 150px;
     width: 150px;
     margin: 5%;
+
+}
+#profile_pic2{
+  background-image: url(asset/profile2.jpg);
+  background-size: cover ;
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  margin: 5%;
+
+}
+#profile_pic3{
+  background-image: url(asset/profile3.jpg);  background-size: cover ;
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  margin: 5%;
+
+}
+#profile_pic4{
+  background-image: url(asset/profile4.jpg);  background-size: cover ;
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  margin: 5%;
+
+}
+#profile_pic5{
+  background-image: url(asset/profile5.jpg);  background-size: cover ;
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  margin: 5%;
 
 }
 .head_line{
