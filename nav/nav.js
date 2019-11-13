@@ -31,7 +31,7 @@ function myFunction() {
 	if(check) {	
 		//alert("In");
 		wrap[0].style.left = "0px";
-	} else{
+	}else{
 		//alert("Out"+check);
 		wrap[0].style.left = "100%";
 	}
