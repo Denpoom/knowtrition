@@ -29,14 +29,17 @@ var wrap = document.getElementsByClassName('nav-wrapper');
 function myFunction() {
 	var check = document.getElementById('nav').checked;
 	if(check) {	
+		//alert("In");
 		wrap[0].style.left = "0px";
 	} else{
-		wrap[0].style.left = "400px";
+		//alert("Out"+check);
+		wrap[0].style.left = "100%";
 	}
 }
 
 function myClick() {
-	var check = document.getElementById('nav').checked;
-	wrap[0].style.left = "400px";
+	document.getElementById('nav').checked = false;
+	//alert("myClick() "+document.getElementById('nav').checked);
+	wrap[0].style.left = "100%";
 	
 }

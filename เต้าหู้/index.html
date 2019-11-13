@@ -30,6 +30,24 @@
             padding-right: 2.5%;
             overflow: hidden;
         }
+
+        @media screen and (max-width: 750px){
+            section.sec1 {
+                height: 65vh;
+            }
+
+            .boxtopic {
+                font-size: 7em;
+            }
+
+            html, html body, body {
+                /*width: 100% !important;
+                min-width: 0 !important;
+                max-width: none !important;
+                overflow-x: hidden;*/
+            }
+        }
+
         @media screen and (max-width: 600px){
             section.sec1 {
                 height: 51vh;
@@ -75,7 +93,7 @@
     </div>
 
     <!------------------------------------------------------------------------------------------------------------------------------------------->
-
+    <div class="container">
     <div class="row" data-aos="fade-up" id="second">
         <div class="content">
             <h1 data-aos="fade-up">สารอาหารสำคัญ</h1>
@@ -131,7 +149,9 @@
             </div>
         </div>
 
-    </div><br>
+    </div>
+    </div>
+    <br>
 
 
 
@@ -213,10 +233,9 @@
     <div class="con">
         <nav>
             <div class="logo">
-                <!--<a href="#">Knowtrition</a>-->
                 <img id="image" src="../nav/logo.png">
             </div>
-            <input type="checkbox" id="nav" class="hidden">
+            <input type="checkbox" id="nav" class="hidden" onclick="myFunction()">
             <label for="nav" class="nav-btn" tabindex="0" aria-label="Click Me to expand Navigation">
                 <i></i>
                 <i></i>
@@ -224,21 +243,14 @@
             </label>
             <div class="nav-wrapper">
                 <ul>
-                    <li><a href="#first">เต้าหู้</a></li>
-                    <li><a href="#second">สารอาหาร</a></li>
-                    <li><a href="#third">ประโยชน์</a></li>
-                    <li><a href="../เมนูเต้าหู้/index.html">เมนูแนะนำ</a></li>
+                    <li><a href="#first" onclick="myClick()">เต้าหู้</a></li>
+                    <li><a href="#second" onclick="myClick()">สารอาหาร</a></li>
+                    <li><a href="#third" onclick="myClick()">ประโยชน์</a></li>
+                    <li><a href="../เมนูเต้าหู้/index.html" onclick="myClick()">เมนูแนะนำ</a></li>
                 </ul>
             </div>
         </nav>
     </div>
-    <!--<nav>
-        <div class="logo">Knowtrition</div>
-        <ul>
-            <li><a href="#about" style="text-decoration: none;">Content</a></li>
-            <li><a class="active" href="#test" style="text-decoration: none;">Test</a></li>
-        </ul>
-    </nav>-->
 
 
     <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
@@ -253,7 +265,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+    
     <script type="text/javascript" src="../nav/nav.js"></script>
     <script src="../aos/aos.js"></script>
     <script>
