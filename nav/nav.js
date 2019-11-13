@@ -37,9 +37,13 @@ function myFunction() {
 	}
 }
 
-function myClick() {
-	document.getElementById('nav').checked = false;
-	//alert("myClick() "+document.getElementById('nav').checked);
-	wrap[0].style.left = "100%";
-	
+if(!document.getElementById('id1')) {
+    var link = document.createElement('link');
+    link.id = 'id1';
+	link.rel = 'shortcut icon';
+	link.type = "image/x-icon";
+	link.href = '../nav/title_logo2.ico';
+	document.head.appendChild(link);
+	document.querySelector('title').innerText = document.querySelector('.boxtopic').innerText+ ' - Knowtrition เว็บไซต์เพื่อเรียนรู้เกี่ยวกับวัตถุดิบ';
 }
+
