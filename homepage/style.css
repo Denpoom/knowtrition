@@ -367,3 +367,12 @@ p{
   }
   
 }
+
+#image {
+    width: 173px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}

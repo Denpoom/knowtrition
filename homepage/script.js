@@ -56,9 +56,63 @@ function change(element,value) {
 };
 
 
-<<<<<<< HEAD
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+	var nav = document.getElementsByTagName('NAV')[0];
+	var btn = document.getElementsByClassName('nav-btn');
 
-=======
->>>>>>> 6de7d3af72bb361fe8603fe12860c333c6a2e46e
+	var currentScrollPos = window.pageYOffset;
+	var top = window.scrollTop;
+	var img = document.getElementById('image');
+	if (currentScrollPos === 0) {
+		nav.classList.remove('black');
+		img.src = "nav/logo.png";
+		//nav.style.background = "red";
+	}
+	else if (prevScrollpos > currentScrollPos) {
+		nav.classList.add('black');
+		nav.style.top = "0";
+		img.src = "nav/logo_white.png";
+		btn[0].top = "0px";
+	} else {
+		nav.style.top = "-90px";
+		btn[0].top = "-90px";
+	}
+	prevScrollpos = currentScrollPos;
+}
 
+
+var wrap = document.getElementsByClassName('nav-wrapper');
+
+function myFunction() {
+	var check = document.getElementById('nav').checked;
+	if(check) {	
+		//alert("In");
+		wrap[0].style.left = "0px";
+	}else{
+		//alert("Out"+check);
+		wrap[0].style.left = "100%";
+	}
+}
+
+function myClick() {
+	document.getElementById('nav').checked = false;
+	//alert("myClick() " +document.getElementById('nav').checked);
+	wrap[0].style.left = "100%";
+}
+
+
+if(!document.getElementById('id1')) {
+    var link = document.createElement('link');
+    link.id = 'id1';
+	link.rel = 'shortcut icon';
+	link.type = "image/x-icon";
+	link.href = '../nav/title_logo2.ico';
+	document.head.appendChild(link);
+	document.querySelector('title').innerText = document.querySelector('.boxtopic').innerText+ ' - Knowtrition เว็บไซต์เพื่อเรียนรู้เกี่ยวกับวัตถุดิบ';
+}
+
+function test(){
+	alert("Test");
+}
 
