@@ -82,7 +82,7 @@ body {
 
 @media (max-width: 767px) {
   .fullscreen-bg {
-    background: url('./asset/food-photographer3.jpg') center center / cover no-repeat;
+    background: url('../asset/food-photographer3.jpg') center center / cover no-repeat;
   }
 
   .fullscreen-bg__video {

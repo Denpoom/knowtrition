@@ -1,57 +1,57 @@
 
-		
-		window.addEventListener("scroll", function (event) {
-			var scroll = Math.floor(this.scrollY);
-			
-			console.log("scroll mod  "+scroll%this.window.innerHeight);
-			console.log("scroll opacity  "+1/((scroll%window.innerHeight)*0.01));
 
-			var change = false;
-			
-			var opa = scroll%this.window.innerHeight;
-			
-			
-			if(scroll < window.innerHeight){
-				this.document.querySelector('.fullscreen-bg video').style.opacity = 2/(scroll*0.01);
-				if(this.document.querySelector('source').src.slice(30) != '/asset/coverr-red-apples-1566725031062.mp4'){
-					change = true;
-				}
-				this.document.querySelector('source').src = './asset/coverr-red-apples-1566725031062.mp4';
-				
-			}
-			else if(scroll < window.innerHeight*2){
-				this.document.querySelector('.fullscreen-bg video').style.opacity = 0.35+2/((scroll%window.innerHeight)*0.01);
-				if(this.document.querySelector('source').src.slice(30) != '/asset/food_foottage.mp4'){
-					change = true;
-				}
-				this.document.querySelector('source').src = './asset/food_foottage.mp4';
-				
-				
-			}else if(scroll < window.innerHeight*3){
-				this.document.querySelector('.fullscreen-bg video').style.opacity = 0.35+2/((scroll%window.innerHeight)*0.01);
-				if(this.document.querySelector('source').src.slice(30) != '/asset/coverr-red-apples-1566725031062.mp4'){
-					change = true;
-				}
-				this.document.querySelector('source').src = './asset/coverr-red-apples-1566725031062.mp4';
-				
-				
-			}else{
-				this.document.querySelector('.fullscreen-bg video').style.opacity = 1;
-			}
-			if(change){
-					
-					$(".fullscreen-bg video")[0].load();
-					
-					
-				
-			}
-			
-			
-		});
-		
+window.addEventListener("scroll", function (event) {
+	var scroll = Math.floor(this.scrollY);
 
-function change(element,value) {
-	element.parentElement.setAttribute('data-select',value);
+	console.log("scroll mod  " + scroll % this.window.innerHeight);
+	console.log("scroll opacity  " + 1 / ((scroll % window.innerHeight) * 0.01));
+
+	var change = false;
+
+	var opa = scroll % this.window.innerHeight;
+
+
+	if (scroll < window.innerHeight) {
+		this.document.querySelector('.fullscreen-bg video').style.opacity = 2 / (scroll * 0.01);
+		if (this.document.querySelector('source').src.slice(30) != '/asset/coverr-red-apples-1566725031062.mp4') {
+			change = true;
+		}
+		this.document.querySelector('source').src = './asset/coverr-red-apples-1566725031062.mp4';
+
+	}
+	else if (scroll < window.innerHeight * 2) {
+		this.document.querySelector('.fullscreen-bg video').style.opacity = 0.35 + 2 / ((scroll % window.innerHeight) * 0.01);
+		if (this.document.querySelector('source').src.slice(30) != '/asset/food_foottage.mp4') {
+			change = true;
+		}
+		this.document.querySelector('source').src = './asset/food_foottage.mp4';
+
+
+	} else if (scroll < window.innerHeight * 3) {
+		this.document.querySelector('.fullscreen-bg video').style.opacity = 0.35 + 2 / ((scroll % window.innerHeight) * 0.01);
+		if (this.document.querySelector('source').src.slice(30) != '/asset/coverr-red-apples-1566725031062.mp4') {
+			change = true;
+		}
+		this.document.querySelector('source').src = './asset/coverr-red-apples-1566725031062.mp4';
+
+
+	} else {
+		this.document.querySelector('.fullscreen-bg video').style.opacity = 1;
+	}
+	if (change) {
+
+		$(".fullscreen-bg video")[0].load();
+
+
+
+	}
+
+
+});
+
+
+function change(element, value) {
+	element.parentElement.setAttribute('data-select', value);
 
 };
 
@@ -86,11 +86,11 @@ var wrap = document.getElementsByClassName('nav-wrapper');
 
 function myFunction() {
 	var check = document.getElementById('nav').checked;
-	if(check) {	
+	if (check) {
 		//alert("In");
 		wrap[0].style.left = "0px";
-	}else{
-		//alert("Out"+check);
+	} else {
+		//alert("Out" + check);
 		wrap[0].style.left = "100%";
 	}
 }
@@ -102,7 +102,7 @@ function myClick() {
 }
 
 
-if(!document.getElementById('id1')) {
+/*if(!document.getElementById('id1')) {
     var link = document.createElement('link');
     link.id = 'id1';
 	link.rel = 'shortcut icon';
@@ -114,5 +114,5 @@ if(!document.getElementById('id1')) {
 
 function test(){
 	alert("Test");
-}
+}*/
 
