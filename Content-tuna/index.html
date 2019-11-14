@@ -16,9 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../nav/nav.css">
     <link rel="stylesheet" href="../aos/aos.css" />
     <style>
-        .boxtopic {
-            width: 4.5em;
-        }
+       
 
         section.sec1 {
             position: relative;
@@ -33,6 +31,9 @@
             padding-left: 2.5%;
             padding-right: 2.5%;
             overflow: hidden;
+        } 
+        .boxtopic {
+            width: 4.5em;
         }
 
         @media screen and (max-width: 600px) {
@@ -1051,7 +1052,7 @@
                 <!--<a href="#">Knowtrition</a>-->
                 <img id="image" src="image/logo.png">
             </div>
-            <input type="checkbox" id="nav" class="hidden">
+            <input type="checkbox" id="nav" class="hidden" onclick="myFunction()">
             <label for="nav" class="nav-btn" tabindex="0" aria-label="Click Me to expand Navigation">
                 <i></i>
                 <i></i>
@@ -1059,9 +1060,9 @@
             </label>
             <div class="nav-wrapper">
                 <ul>
-                    <li><a href="#first">ทูน่า</a></li>
-                    <li><a href="#nutri">สารอาหาร</a></li>
-                    <li><a href="#third">ประโยชน์</a></li>
+                    <li><a href="#first" onclick="myClick()">ทูน่า</a></li>
+                    <li><a href="#nutri" onclick="myClick()">สารอาหาร</a></li>
+                    <li><a href="#third" onclick="myClick()">ประโยชน์</a></li>
                     <li><a href="../เมนูปลาทูน่า/index.html">เมนูแนะนำ</a></li>
                 </ul>
             </div>

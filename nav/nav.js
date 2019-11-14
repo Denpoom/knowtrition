@@ -29,7 +29,7 @@ var wrap = document.getElementsByClassName('nav-wrapper');
 function myFunction() {
 	var check = document.getElementById('nav').checked;
 	if(check) {	
-		// alert("In");
+		//alert("In");
 		wrap[0].style.left = "0px";
 		window.scrollTo(0,0);
 		// console.log("nav active");

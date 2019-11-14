@@ -29,6 +29,33 @@
             padding-right: 2.5%;
             overflow: hidden;
         }
+
+        .boxtopic {
+            width: 4.5em;
+        }
+
+        @media screen and (max-width: 600px) {
+            section.sec1 {
+                height: 51vh;
+            }
+
+            .boxtopic {
+                font-size: 4.5em;
+                width: 5em;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            section.sec1 {
+                height: 45vh;
+            }
+
+            .boxtopic {
+                font-size: 2.5em;
+                width: 6em;
+            }
+        }
+
     </style>
 
     <title>นัตโตะ</title>
@@ -45,7 +72,7 @@
 
         <div class="picture" data-aos="fade-right" style="border-radius: 20px; 
         box-shadow: 0 0 11px rgba(33,33,33,.2);
-        padding: 10px;">>
+        padding: 10px;">
             <div class="center"><img src="image/nutto_cover.jpg"></div>
 
         </div>
@@ -976,7 +1003,7 @@
                 <!--<a href="#">Knowtrition</a>-->
                 <img id="image" src="image/logo.png">
             </div>
-            <input type="checkbox" id="nav" class="hidden">
+            <input type="checkbox" id="nav" class="hidden" onclick="myFunction()">
             <label for="nav" class="nav-btn" tabindex="0" aria-label="Click Me to expand Navigation">
                 <i></i>
                 <i></i>
@@ -984,9 +1011,9 @@
             </label>
             <div class="nav-wrapper">
                 <ul>
-                    <li><a href="#first">นัตโตะ</a></li>
-                    <li><a href="#second">สารอาหาร</a></li>
-                    <li><a href="#third">ประโยชน์</a></li>
+                    <li><a href="#first" onclick="myClick()">นัตโตะ</a></li>
+                    <li><a href="#second" onclick="myClick()">สารอาหาร</a></li>
+                    <li><a href="#third" onclick="myClick()">ประโยชน์</a></li>
                     <li><a href="../เมนูนัตโตะ/index.html">เมนูแนะนำ</a></li>
                 </ul>
             </div>

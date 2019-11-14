@@ -16,10 +16,7 @@ body {
     font-family: 'Kanit', sans-serif;
 }
 
-@font-face {
-  font-family: Kanit;
-  src: url(../kanit-regular.otf);
-}
+
 /* pound update */
 a:hover{
     text-decoration: none;
