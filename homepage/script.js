@@ -83,12 +83,19 @@ var wrap = document.getElementsByClassName('nav-wrapper');
 
 function myFunction() {
 	var check = document.getElementById('nav').checked;
+	
 	if (check) {
 		//alert("In");
+	
+		window.scrollTo(0,0);
 		wrap[0].style.left = "0px";
+		
+
 	} else {
 		//alert("Out" + check);
+
 		wrap[0].style.left = "100%";
+		
 	}
 }
 
