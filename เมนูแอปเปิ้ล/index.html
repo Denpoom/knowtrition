@@ -31,19 +31,6 @@
             padding-right: 2.5%;
             overflow: hidden;
         }
-
-        @media screen and (max-width: 600px) {
-            section.sec1 {
-                height: 51vh;
-            }
-        }
-
-        @media screen and (max-width: 400px) {
-            section.sec1 {
-                height: 45vh;
-            }
-        }
-
         .content-left {
             width: 50%;
             background: #94b02f;
@@ -55,6 +42,44 @@
             background: #94b02f;
             border-radius: 0px 40px 40px 0px;
         }
+
+        @media screen and (max-width: 600px) {
+            section.sec1 {
+                height: 51vh;
+            }
+            .content-left {
+                width: 100%;
+                background: #94b02f;
+                border-radius: 40px 40px 0px 0px;
+            }
+
+            .content-right {
+                width: 100%;
+                background: #94b02f;
+                border-radius: 0px 0px 40px 40px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            section.sec1 {
+                height: 45vh;
+            }
+            .content-left {
+                width: 100%;
+                background: #94b02f;
+                border-radius: 40px 40px 0px 0px;
+                margin: auto 5%;
+            }
+
+            .content-right {
+                width: 100%;
+                background: #94b02f;
+                border-radius: 0px 0px 40px 40px;
+                margin: auto 5%;
+            }
+        }
+
+        
     </style>
 
     <title>แอปเปิ้ล</title>
