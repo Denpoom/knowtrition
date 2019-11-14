@@ -82,7 +82,8 @@ body {
 
 @media (max-width: 767px) {
   .fullscreen-bg {
-    background: url('./asset/food-photographer3.jpg') center center / cover no-repeat;
+    background: url('http://10.0.15.12/wtprojects/wtpg23/asset/food-photographer3.jpg') center center / cover no-repeat;
+    filter: brightness(60%);
   }
 
   .fullscreen-bg__video {
@@ -111,8 +112,8 @@ div.col-12.box{
   height: 120vh;
   
 }
-#ingredient.row{
-  
+#ingredient{
+  margin-top: 30vh;
 }
 
 
@@ -189,9 +190,22 @@ section.introduce{
 section.selection{
   position: relative;
 }
-img.card-img-top{
-  height: 25vh;
+
+.card-title{
+  font-size: 5vh;
+  color: black !important;
 }
+p.card-text{
+  font-size: 2vh !important;
+  color: black !important;
+}
+
+img.card-img-top{
+ width: auto;
+ max-height: 20vh;
+
+}
+
 
 .content {
     margin-top: 50px;
@@ -302,6 +316,7 @@ nav ul li a.active {
     font-family: 'Kanit', sans-serif;
     margin: 10%; 
     padding: 10%;
+    
 }
 .footer {
     text-align: center;
@@ -309,7 +324,7 @@ nav ul li a.active {
     width: 100%;
     height: 60px;
     line-height: 60px;
-    
+    color: #fff;
     display: block;
     box-sizing: border-box;
 }
@@ -361,6 +376,7 @@ p{
       font-size: 1.5rem;
     }
  }
+
  @media screen and (max-width: 930px){
   img.card-img-top{
     width: 28vw;
@@ -375,4 +391,20 @@ p{
     top: 0;
     bottom: 0;
     margin: auto;
+}
+.curve{
+  border-radius: 5%;
+  
+}
+.hyperlink{
+  filter: brightness(100%);
+  color: white;
+  transition: 1s;
+
+}
+.hyperlink:hover{
+  filter: brightness(150%) grayscale(0.5);
+  transition: 1.5s;
+  color: black;
+  
 }
