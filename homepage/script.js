@@ -83,11 +83,11 @@ var wrap = document.getElementsByClassName('nav-wrapper');
 
 function myFunction() {
 	var check = document.getElementById('nav').checked;
-	if(check) {	
+	if (check) {
 		//alert("In");
 		wrap[0].style.left = "0px";
-	}else{
-		//alert("Out"+check);
+	} else {
+		//alert("Out" + check);
 		wrap[0].style.left = "100%";
 	}
 }
@@ -99,7 +99,7 @@ function myClick() {
 }
 
 
-if(!document.getElementById('id1')) {
+/*if(!document.getElementById('id1')) {
     var link = document.createElement('link');
     link.id = 'id1';
 	link.rel = 'shortcut icon';
@@ -107,8 +107,4 @@ if(!document.getElementById('id1')) {
 	link.href = '../nav/title_logo2.ico';
 	document.head.appendChild(link);
 	document.querySelector('title').innerText = document.querySelector('.boxtopic').innerText+ ' - Knowtrition เว็บไซต์เพื่อเรียนรู้เกี่ยวกับวัตถุดิบ';
-}
-
-
-
-
+}*/
